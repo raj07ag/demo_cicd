@@ -31,5 +31,5 @@ jobs:
 
       - name: Build and push to Docker Hub
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/irsi-model:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/iris-model:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/iris-model:latest
