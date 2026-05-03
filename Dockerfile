@@ -4,4 +4,5 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python src/train.py
 RUN pytest tests/
-CMD ['python', 'src/train.py']
+EXPOSE 8080
+CMD ['python', 'src/app.py']
